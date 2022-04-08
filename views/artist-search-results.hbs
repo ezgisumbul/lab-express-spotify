@@ -1,0 +1,14 @@
+<ul>
+  {{#each artists}}
+    <li>
+
+      {{#if images.length}}
+        <img src='{{images.0.url}}' alt='{{name}}' />
+      {{/if}}
+      <h3>{{name}}</h3>
+      {{! <button onclick='/albums/someArtistIdGoesHere'>View albums</button> }}
+      {{!-- <button onclick='/albums/{{id}}'>View albums</button> --}}
+      <a href='/albums/{{id}}'>View albums</a>
+    </li>
+  {{/each}}
+</ul>
